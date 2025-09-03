@@ -80,8 +80,9 @@
 
                 <div class="download-recipe">
                     <p class="download-text">Download recipe: </p>
-                    <button type="button" class="jpg" id="jpg-{{ai_response.id}}}" onclick="event.stopPropagation(); downloadFile('jpg', {{ forloop.counter0 }})"><strong>JPG</strong></button>
+                    <button type="button" class="jpg" id="jpg-{{ai_response.id}}" onclick="event.stopPropagation(); downloadFile('jpg', {{ forloop.counter0 }})"><strong>JPG</strong></button>
                     <button type="button" class="pdf" id="pdf-{{ai_response.title}}" onclick="event.stopPropagation(); downloadFile('pdf', {{ forloop.counter0 }})"><strong>PDF</strong></button>
+                    <button type="button" class="text" id="pdf-{{ai_response.title}}" onclick="event.stopPropagation(); downloadFile('txt', {{ forloop.counter0 }})"><strong>txt</strong></button>
                 </div>
             </div>
         </div>
@@ -91,7 +92,14 @@
 
         <script>
             function downloadFile(type, index){
-                let url = type === 'pdf' ? `/download-pdf/?index=${index}` : `/download-jpg/?index=${index}`;
+                let url = '';
+                if (type === 'pdf') {
+                    url = `/download-pdf/?index=${index}`;
+                } else if (type === 'jpg') {
+                    url = `/download-jpg/?index=${index}`;
+                } else {
+                    url = `/download-txt/?index=${index}`;
+                }
                 window.location.href = url;
             }
 

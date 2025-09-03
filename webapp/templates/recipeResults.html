@@ -75,13 +75,21 @@
         <p class="download-text">Download recipe: </p>
         <button class="jpg" onclick="downloadFile('jpg')"><strong>JPG</strong></button>
         <button class="pdf" onclick="downloadFile('pdf')"><strong>PDF</strong></button>
+        <button class="text" onclick="downloadFile('txt')"><strong>txt</strong></button>
     </div>
 </div>
 </div>
 
 <script>
     function downloadFile(type){
-        let url = type === 'pdf' ? '/download-pdf/' : '/download-jpg/';
+        let url = '';
+        if (type === 'pdf') {
+            url = '/download-pdf/';
+        } else if (type === 'jpg') {
+            url = '/download-jpg/';
+        } else if (type === 'txt') {
+            url = '/download-txt/';
+        }
         window.location.href = url;
     }
 </script>

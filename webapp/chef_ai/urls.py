@@ -16,4 +16,5 @@ urlpatterns = [
     path('scan-images/', views.scan_images, name='scan-images'),
     path('history/<int:recipe_id>/', views.view_saved_recipe, name='view_saved_recipe'),
     path('post-recipe/', views.post_recipe, name="post-recipe"),
+    path("download-txt/", views.download_txt, name="download_txt")
 ]

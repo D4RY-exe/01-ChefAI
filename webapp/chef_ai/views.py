@@ -280,6 +280,31 @@ def download_jpg(request):
     safe_title = re.sub(r'[^a-zA-Z0-9_]+', '_', title)
     return FileResponse(buffer, as_attachment=True, filename=f"{safe_title}.jpg")
 
+def download_txt(request):
+    index = int(request.GET.get('index', 0))
+    ai_responses = request.session.get('ai_response', [])
+
+    if not ai_responses or index >= len(ai_responses):
+        return redirect('response_recipe')
+
+    ai_response = ai_responses[index]
+
+    content = "\n".join([
+        f"Title: {ai_response.get('title', 'N/A')}",
+        f"Cuisine: {ai_response.get('cuisine', 'N/A')}",
+        f"Time Required: {ai_response.get('time', 'N/A')}",
+        "\nIngredients:\n" + "\n".join(ai_response.get('ingredients', [])),
+        "\nUtensils:\n" + "\n".join(ai_response.get('utensils', [])),
+        "\nSteps:\n" + "\n".join(ai_response.get('steps', [])),
+    ])
+
+    buffer = io.BytesIO()
+    buffer.write(content.encode('utf-8'))
+    buffer.seek(0)
+
+    safe_title = re.sub(r'[^a-zA-Z0-9_]+', '_', ai_response.get('title', 'Recipe'))
+    return FileResponse(buffer, as_attachment=True, filename=f"{safe_title}.txt")
+
 def search_ingredients(request):
     # Gets the search query
     query = request.GET.get('q', '').strip().lower()
