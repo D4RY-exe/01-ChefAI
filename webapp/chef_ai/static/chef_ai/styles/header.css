@@ -5,7 +5,7 @@
     right: 0;
     max-height: 7.5rem;
     width: 100vw;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(227, 254, 255, 0.3);
     backdrop-filter: blur(4px); 
     display: flex;
     justify-content: space-between;
@@ -32,18 +32,18 @@
     display: inline-block;
     padding: 1rem 2rem;
     margin-right:2rem;
-    background: linear-gradient(90deg, #B4021E, #FFB949);
+    background: linear-gradient(90deg, #0226b4, #002f09);
     color: white;  /* red from logo */
     text-align: center;
     text-decoration: none; /* Remove underline */
     border-radius: 2rem;
     font-weight: bold;
-    box-shadow: 0 .3rem .4rem #B4021E;
+    box-shadow: 0 .3rem .4rem #00052e;
     text-shadow: 2px 2px 4px black;
 }
 .header .navbar .loginButton:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 25px rgba(255, 58, 130, 0.4);
+    box-shadow: 0 6px 25px rgba(58, 216, 255, 0.4);
 }
 /* End of styling for login button */
 
@@ -58,7 +58,7 @@
 }
 /* if username is too long it turns into an ellipsis */
 .header .navbar .userContainer p {
-    color:#FFB949;
+    color:#0226b4;
     text-shadow: 2px 2px 4px black;
     padding:.5rem 1rem;  
     font-weight: bold;
@@ -140,7 +140,7 @@
 
 /* Header override for landing page only */
 .header.landing-header {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(227, 254, 255, 0.3);
     backdrop-filter: blur(4px);
     box-shadow: none;
     background-image: none;         

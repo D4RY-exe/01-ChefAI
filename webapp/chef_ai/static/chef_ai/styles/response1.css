@@ -1,6 +1,6 @@
 .download-recipe .jpg, .download-recipe .pdf
 {
-    background: linear-gradient(90deg, #B4021E, #FFB949);
+    background: linear-gradient(90deg, #0226b4, #002f09);
     color: white;
     padding: .5rem 1rem;
     border: none;
@@ -8,7 +8,7 @@
     cursor: pointer;
     font-size: 1rem;
     white-space: nowrap;
-    box-shadow: 0rem 0.125rem 0.25rem #B4021E;
+    box-shadow: 0rem 0.125rem 0.25rem #0237b4;
     text-shadow: 0.125rem 0.125rem 0.25rem black;
     margin: 0.6rem;
 }
@@ -91,7 +91,7 @@
 }
 
 .carousel-controls button {
-    background: linear-gradient(90deg, #B4021E, #FFB949);
+    background: linear-gradient(90deg, #0226b4, #002f09);
     border: none;
     padding: 0.625rem 1.25rem;
     font-size: 1.5rem;
@@ -103,7 +103,7 @@
 
 .view-btn {
     margin-top: 1.25rem;
-    background: linear-gradient(90deg, #B4021E, #FFB949);
+    background: linear-gradient(90deg, #0226b4, #002f09);
     padding: 0.625rem 0.9375rem;
     border: none;
     border-radius: 0.5rem;

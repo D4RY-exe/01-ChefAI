@@ -92,7 +92,7 @@ h1 {
 }
 
 .login-container form button {
-    background: linear-gradient(90deg, #B4021E, #FFB949);
+    background: linear-gradient(90deg, #0226b4, #002f09);
     color: white;
     display: block;
     padding: 0.8125rem;

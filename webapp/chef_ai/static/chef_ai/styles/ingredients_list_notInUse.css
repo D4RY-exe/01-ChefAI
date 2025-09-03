@@ -1,7 +1,7 @@
 /* This is the CSS for the selection of ingredients or the homepage */
 
 body {
-    background: linear-gradient(180deg, rgba(255,115,115,1) 0%, rgba(255,152,64,1) 50%);
+    background: linear-gradient(180deg, #0226b4, #002f09 50%);
     color: #F5CBA7; 
     font-family: Arial, sans-serif;
     display: flex;

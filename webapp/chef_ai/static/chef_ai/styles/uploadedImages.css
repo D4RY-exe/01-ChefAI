@@ -5,8 +5,8 @@
   }
   
   .uploaded-file-item {
-    background: linear-gradient(90deg, #B4021E, #FFB949);
-    box-shadow: 0px 2px 4px #B4021E;
+    background: linear-gradient(90deg, #0226b4, #002f09);
+    box-shadow: 0px 2px 4px #021698;
     border-radius: 1rem;
     padding: 0.5rem 1rem;
     margin: 0.5rem;
@@ -49,8 +49,8 @@
   }
   
   .uploaded-file-item input[type="checkbox"]:checked {
-    background-color: #B4021E;
-    border-color: #B4021E;
+    background-color: #020bb47b;
+    border-color: #0211b4;
   }
   
   .uploaded-file-item input[type="checkbox"]::before {

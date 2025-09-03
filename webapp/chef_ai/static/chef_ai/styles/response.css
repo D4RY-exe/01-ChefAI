@@ -18,7 +18,7 @@
 .sphere-1 {
     width: 40vw;
     height: 40vw;
-    background: linear-gradient(40deg, rgba(180, 2, 30, 0.8), rgba(255, 185, 73, 0.4));
+    background: linear-gradient(40deg, #0226b4, #002f09);
     top: -10%;
     left: -10%;
     animation: float-1 15s ease-in-out infinite alternate;
@@ -27,7 +27,7 @@
 .sphere-2 {
     width: 45vw;
     height: 45vw;
-    background: linear-gradient(240deg, rgba(255, 185, 73, 0.8), rgba(180, 2, 30, 0.4));
+    background: linear-gradient(240deg, #0226b4, #002f09);
     bottom: -20%;
     right: -10%;
     animation: float-2 18s ease-in-out infinite alternate;
@@ -36,7 +36,7 @@
 .sphere-3 {
     width: 30vw;
     height: 30vw;
-    background: linear-gradient(120deg, rgba(180, 2, 30, 0.5), rgba(255, 185, 73, 0.3));
+    background: linear-gradient(120deg, #0226b4, #002f09);
     top: 60%;
     left: 20%;
     animation: float-3 20s ease-in-out infinite alternate;
@@ -140,7 +140,7 @@
 
 .download-recipe .jpg, .download-recipe .pdf
 {
-    background: linear-gradient(90deg, #B4021E, #FFB949);
+    background: linear-gradient(90deg,#0226b4, #002f09);
     color: white;
     padding: .5rem 1rem;
     border: none;
@@ -148,7 +148,7 @@
     cursor: pointer;
     font-size: 1rem;
     white-space: nowrap;
-    box-shadow: 0rem 0.125rem 0.25rem #B4021E;
+    box-shadow: 0rem 0.125rem 0.25rem #0220b4;
     text-shadow: 0.125rem 0.125rem 0.25rem black;
     margin: 0.6rem;
 }
@@ -163,7 +163,7 @@
 }
 
 .recipe-card .no-recipe h2 {
-    color: #ff0000;
+    color: #002b01;
     font-size: 1.5rem;
     margin-bottom: 0.625rem;
 }
@@ -230,7 +230,7 @@
 }
 
 .carousel-controls button {
-    background: linear-gradient(90deg, #B4021E, #FFB949);
+    background: linear-gradient(90deg, #0226b4, #002f09);
     border: none;
     padding: 0.625rem 1.25rem;
     font-size: 1.5rem;
@@ -242,7 +242,7 @@
 
 .view-btn {
     margin-top: 1.25rem;
-    background: linear-gradient(90deg, #B4021E, #FFB949);
+    background: linear-gradient(90deg, #0226b4, #002f09);
     padding: 0.625rem 0.9375rem;
     border: none;
     border-radius: 0.5rem;
